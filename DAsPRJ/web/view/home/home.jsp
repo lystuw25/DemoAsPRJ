@@ -127,10 +127,10 @@
         </div>
         <script>
             function btnViewSchedule() {
-                window.location.href = "${pageContext.request.contextPath}/productionPlan/list";
+                window.location.href = "${pageContext.request.contextPath}/productionplan/list";
             }
             function btnCreateSchedule() {
-                window.location.href = "${pageContext.request.contextPath}/productionPlan/create"; 
+                window.location.href = "${pageContext.request.contextPath}/productionplan/create"; 
             }
              function logout() {
                 window.location.href = "${pageContext.request.contextPath}/logout";

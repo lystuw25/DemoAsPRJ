@@ -313,7 +313,7 @@
         </c:if>
         <c:if test="${dates == null}">
             <h2>Set Shift for Plan Campaign</h2>
-            <form action="${pageContext.request.contextPath}/productionPlan/list/product" method="POST" onsubmit="return validateForm();">
+            <form action="${pageContext.request.contextPath}/productionplan/list/product" method="POST" onsubmit="return validateForm();">
                 <input type="hidden" value="${planTimelines.id}" name="pcId"/>
                 <input type="hidden" id="maxTotal" value="${planTimelines.quantity}" name="maxTotal"/>
 

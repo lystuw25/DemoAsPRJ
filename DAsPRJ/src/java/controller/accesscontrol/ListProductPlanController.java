@@ -121,7 +121,7 @@ public class ListProductPlanController extends HttpServlet {
                 }
             }
         }
-        response.sendRedirect(request.getContextPath()+"/productionPlan/list");
+        response.sendRedirect(request.getContextPath()+"/productionplan/list");
     }
 
 }
