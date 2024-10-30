@@ -40,7 +40,7 @@ public class LoginController extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         //pre-processing
-        req.getRequestDispatcher("view/login.jsp").forward(req, resp);
+        req.getRequestDispatcher("login.jsp").forward(req, resp);
         //post-processing
     }
     
