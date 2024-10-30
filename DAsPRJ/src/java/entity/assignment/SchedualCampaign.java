@@ -13,12 +13,12 @@ public class SchedualCampaign {
     private Date date;
     private int shift;
     private int quantity;
-    private PlanCampain planCampain;
+    private PlanCampaign planCampain;
 
     public SchedualCampaign() {
     }
 
-    public SchedualCampaign(int id, Date date, int shift, int quantity, PlanCampain planCampain) {
+    public SchedualCampaign(int id, Date date, int shift, int quantity, PlanCampaign planCampain) {
         this.id = id;
         this.date = date;
         this.shift = shift;
@@ -58,11 +58,11 @@ public class SchedualCampaign {
         this.quantity = quantity;
     }
 
-    public PlanCampain getPlanCampain() {
+    public PlanCampaign getPlanCampain() {
         return planCampain;
     }
 
-    public void setPlanCampain(PlanCampain planCampain) {
+    public void setPlanCampain(PlanCampaign planCampain) {
         this.planCampain = planCampain;
     }
 }

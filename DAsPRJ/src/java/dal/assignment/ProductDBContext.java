@@ -1,9 +1,4 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
 package dal.assignment;
-
 import dal.DBContext;
 import entity.assignment.Department;
 import entity.assignment.Product;
@@ -14,28 +9,7 @@ import java.util.ArrayList;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
-/**
- *
- * @author sonnt-local
- */
-public class ProductDBContext extends DBContext<Product> {
-
-    @Override
-    public void insert(Product entity) {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
-    }
-
-    @Override
-    public void update(Product entity) {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
-    }
-
-    @Override
-    public void delete(Product entity) {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
-    }
-
-    @Override
+public class ProductDBContext extends DBContext {
     public ArrayList<Product> list() {
         ArrayList<Product> products = new ArrayList<>();
         PreparedStatement command = null;
@@ -64,11 +38,6 @@ public class ProductDBContext extends DBContext<Product> {
             }
         }
         return products;
-    }
-
-    @Override
-    public Product get(int id) {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
     }
 
 }

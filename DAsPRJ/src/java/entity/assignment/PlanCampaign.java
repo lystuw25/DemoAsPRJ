@@ -1,5 +1,5 @@
 package entity.assignment;
-public class PlanCampain {
+public class PlanCampaign {
     private int id;
     private Plan plan;
     private Product product;
@@ -7,7 +7,10 @@ public class PlanCampain {
     private int estimate;
     private float cost;
 
-    public PlanCampain(int id, Plan plan, Product product, int quantity, int estimate, float cost) {
+    public PlanCampaign() {
+    }
+
+    public PlanCampaign(int id, Plan plan, Product product, int quantity, int estimate, float cost) {
         this.id = id;
         this.plan = plan;
         this.product = product;

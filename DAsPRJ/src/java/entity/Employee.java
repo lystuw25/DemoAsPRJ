@@ -1,11 +1,14 @@
 package entity;
 import entity.accesscontrol.User;
+import entity.assignment.Department;
 import java.sql.*;
 public class Employee {
     private int id;
     private String name;
     private boolean gender;
     private String address;
+    private double salary;
+    private Department dept;
     private Date dob;
     private User createdby;
     private User updatedby;
@@ -35,9 +38,6 @@ public class Employee {
         this.createdby = createdby;
     }
     
-    
-    private Department dept;
-
     public Department getDept() {
         return dept;
     }
@@ -85,6 +85,14 @@ public class Employee {
 
     public void setDob(Date dob) {
         this.dob = dob;
+    }
+
+    public double getSalary() {
+        return salary;
+    }
+
+    public void setSalary(double salary) {
+        this.salary = salary;
     }
     
 }

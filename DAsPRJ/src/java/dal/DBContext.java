@@ -8,10 +8,9 @@ import java.util.ArrayList;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
-public abstract class DBContext<T> {
+public abstract class DBContext {
     protected Connection connection;
-    public DBContext()
-    {
+    public DBContext(){
         try {
             String user = "sa";
             String pass = "12345";
@@ -25,10 +24,4 @@ public abstract class DBContext<T> {
         }
         
     }
-    
-    public abstract void insert(T entity);
-    public abstract void update(T entity);
-    public abstract void delete(T entity);
-    public abstract ArrayList<T> list();
-    public abstract T get(int id);
 }
