@@ -22,21 +22,30 @@ public class AccountDBContext extends DBContext {
 
     public User Login(String user, String pass) {
         User acc = new User();
+        PreparedStatement stm = null;
         String sql = "Select * From [User] Where UserName = ? AND password = ?";
         try {
-            PreparedStatement stm = connection.prepareStatement(sql);
+            stm = connection.prepareStatement(sql);
             stm.setString(1, user);
             stm.setString(2, pass);
             ResultSet rs = stm.executeQuery();
             while (rs.next()) {
                 acc.setUsername(rs.getString("UserName"));
+                acc.setDisplayname(rs.getString("displayname")); //?
             }
         } catch (SQLException ex) {
             Logger.getLogger(AccountDBContext.class.getName()).log(Level.SEVERE, null, ex);
+        } finally {
+            try {
+                stm.close();
+                connection.close();
+            } catch (SQLException ex) {
+                Logger.getLogger(AccountDBContext.class.getName()).log(Level.SEVERE, null, ex);
+            }
         }
         return acc;
     }
-
+    
     public ArrayList<Role> getRoles(String username) {
         String sql = "SELECT r.RoleID,r.RoleName,f.FeatureID,f.FeatureName,f.url\n"
                 + "FROM [User] u \n"

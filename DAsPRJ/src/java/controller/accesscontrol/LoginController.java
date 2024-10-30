@@ -4,7 +4,7 @@
  */
 package controller.accesscontrol;
 
-import dal.UserDBContext;
+import dal.AccountDBContext;
 import entity.accesscontrol.User;
 import jakarta.servlet.ServletException;
 import jakarta.servlet.http.HttpServlet;
@@ -23,19 +23,14 @@ public class LoginController extends HttpServlet {
         String user = req.getParameter("username");
         String pass = req.getParameter("password");
         
-        UserDBContext db = new UserDBContext();
-        User account = db.get(user, pass);
+        AccountDBContext db = new AccountDBContext();
+        User account = db.Login(user, pass);
         
-        if(account!=null)
-        {
+        if(account!=null){
             req.getSession().setAttribute("account", account);
-            
             resp.getWriter().println("login successful!");
         }
-        else
-        {
-            resp.getWriter().println("login failed!");
-        }
+        else resp.getWriter().println("login failed!");
         
         String url = this.getInitParameter("url");
         resp.getWriter().println(url);

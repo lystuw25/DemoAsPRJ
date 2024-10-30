@@ -1,4 +1,4 @@
-package dal.assignment;
+package dal;
 import dal.DBContext;
 import entity.Employee;
 import entity.assignment.Attendence;
@@ -298,7 +298,7 @@ public class PlanDBContext extends DBContext{
                 entity.setId(rs.getInt("PlanID"));
             }
 
-            for (PlanCampaign campain : entity.getCampains()) {
+            for (PlanCampaign campain : entity.getCampaigns()) {
                 String sql_insert_campain = "INSERT INTO [PlanCampain]\n"
                         + "           ([PlanID]\n"
                         + "           ,[ProductID]\n"

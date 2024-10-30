@@ -8,14 +8,14 @@ public class Plan {
     private Date start;
     private Date end;
     private Department dept;
-    private ArrayList<PlanCampaign> campains = new ArrayList<>();
+    private ArrayList<PlanCampaign> campaigns = new ArrayList<>();
 
-    public ArrayList<PlanCampaign> getCampains() {
-        return campains;
+    public ArrayList<PlanCampaign> getCampaigns() {
+        return campaigns;
     }
 
-    public void setCampains(ArrayList<PlanCampaign> campains) {
-        this.campains = campains;
+    public void setCampaigns(ArrayList<PlanCampaign> campains) {
+        this.campaigns = campains;
     }
 
     public int getId() {

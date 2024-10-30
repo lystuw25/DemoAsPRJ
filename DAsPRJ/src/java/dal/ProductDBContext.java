@@ -1,4 +1,4 @@
-package dal.assignment;
+package dal;
 import dal.DBContext;
 import entity.assignment.Department;
 import entity.assignment.Product;
