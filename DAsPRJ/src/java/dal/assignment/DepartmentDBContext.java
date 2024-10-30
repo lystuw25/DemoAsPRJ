@@ -1,9 +1,4 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
 package dal.assignment;
-
 import dal.DBContext;
 import entity.assignment.Department;
 import java.sql.PreparedStatement;
@@ -12,11 +7,6 @@ import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.logging.Level;
 import java.util.logging.Logger;
-
-/**
- *
- * @author sonnt-local
- */
 public class DepartmentDBContext extends DBContext<Department> {
 
     @Override

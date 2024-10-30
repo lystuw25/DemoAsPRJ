@@ -8,19 +8,14 @@ import java.util.ArrayList;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
-/**
- *
- * @author sonnt-local
- */
 public abstract class DBContext<T> {
     protected Connection connection;
     public DBContext()
     {
         try {
-            String user = "sonnt";
-            String pass = "12345678";
-            String url = "jdbc:sqlserver://localhost\\SQLEXPRESS:1433;databaseName=CreatedByPA;trustServerCertificate=true;";
-            
+            String user = "sa";
+            String pass = "12345";
+            String url = "jdbc:sqlserver://localhost\\SQLEXPRESS:1433;databaseName=test;trustServerCertificate=true;";
             Class.forName("com.microsoft.sqlserver.jdbc.SQLServerDriver");
             connection = DriverManager.getConnection(url, user, pass);
         } catch (ClassNotFoundException ex) {
