@@ -1,3 +1,9 @@
+<%-- 
+    Document   : home
+    Created on : 30 Oct 2024, 23:52:45
+    Author     : A A
+--%>
+
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>

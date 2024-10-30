@@ -4,8 +4,18 @@ public class PlanCampain {
     private Plan plan;
     private Product product;
     private int quantity;
+    private int estimate;
     private float cost;
 
+    public PlanCampain(int id, Plan plan, Product product, int quantity, int estimate, float cost) {
+        this.id = id;
+        this.plan = plan;
+        this.product = product;
+        this.quantity = quantity;
+        this.estimate = estimate;
+        this.cost = cost;
+    }
+    
     public int getId() {
         return id;
     }
@@ -44,6 +54,14 @@ public class PlanCampain {
 
     public void setCost(float cost) {
         this.cost = cost;
+    }
+
+    public int getEstimate() {
+        return estimate;
+    }
+
+    public void setEstimate(int estimate) {
+        this.estimate = estimate;
     }
     
 }

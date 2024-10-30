@@ -1,8 +1,13 @@
 package entity.assignment;
+
+import entity.Employee;
+import java.util.ArrayList;
+
 public class Department {
     private int id;
     private String name;
     private String type;
+    private ArrayList<Employee> emps = new ArrayList<>();
 
     public int getId() {
         return id;
@@ -26,6 +31,14 @@ public class Department {
 
     public void setType(String type) {
         this.type = type;
+    }
+
+    public ArrayList<Employee> getEmps() {
+        return emps;
+    }
+
+    public void setEmps(ArrayList<Employee> emps) {
+        this.emps = emps;
     }
     
 }
