@@ -28,7 +28,7 @@ public class LoginController extends HttpServlet {
         
         if(account!=null){
             req.getSession().setAttribute("account", account);
-            resp.getWriter().println("login successful!");
+            resp.sendRedirect(req.getContextPath()+"/home");
         }
         else resp.getWriter().println("login failed!");
         
@@ -40,7 +40,7 @@ public class LoginController extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         //pre-processing
-        req.getRequestDispatcher("login.html").forward(req, resp);
+        req.getRequestDispatcher("view/login.jsp").forward(req, resp);
         //post-processing
     }
     
