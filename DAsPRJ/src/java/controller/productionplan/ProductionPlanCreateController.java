@@ -92,7 +92,7 @@ public class ProductionPlanCreateController extends BaseRequiredAuthenticationCo
             //insert
             PlanDBContext db = new PlanDBContext();
             db.insert(plan);
-            response.sendRedirect(request.getContextPath()+"/productionPlan/list");
+            response.sendRedirect(request.getContextPath()+"/productionplan/list");
         }
         else response.getWriter().println("your plan does not have any products / campains");
         

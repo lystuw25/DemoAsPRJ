@@ -2,6 +2,13 @@
 <project-private xmlns="http://www.netbeans.org/ns/project-private/1">
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
-        <group/>
+        <group>
+            <file>file:/D:/PRJ/assignment/DAsPRJ/web/index.html</file>
+            <file>file:/D:/PRJ/assignment/DAsPRJ/web/view/home/home.jsp</file>
+            <file>file:/D:/PRJ/assignment/DAsPRJ/web/login.jsp</file>
+            <file>file:/D:/PRJ/assignment/DAsPRJ/src/java/controller/accesscontrol/LoginController.java</file>
+            <file>file:/D:/PRJ/assignment/DAsPRJ/src/java/controller/accesscontrol/ListProductPlanController.java</file>
+            <file>file:/D:/PRJ/assignment/DAsPRJ/web/WEB-INF/web.xml</file>
+        </group>
     </open-files>
 </project-private>

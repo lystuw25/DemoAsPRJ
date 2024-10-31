@@ -101,7 +101,7 @@
                         <td>${sp.plan.dept.name}</td>
                         <td>${sp.plan.dept.type}</td>
 
-                        <td><a href="${pageContext.request.contextPath}/productionPlan/list/product?id=${sp.id}"><i class="fa-solid fa-eye"></i></a></td>
+                        <td><a href="${pageContext.request.contextPath}/productionplan/list/product?id=${sp.id}"><i class="fa-solid fa-eye"></i></a></td>
                     </tr>
                 </c:forEach>
             </tbody>

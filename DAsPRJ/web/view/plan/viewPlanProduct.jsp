@@ -177,7 +177,7 @@
     </head>
     <body>
         <div style="margin: 25px 10px  20px 150px ">
-            <a href="${pageContext.request.contextPath}/productionPlan/list" style="text-decoration: none">
+            <a href="${pageContext.request.contextPath}/productionplan/list" style="text-decoration: none">
                 <i class="fa-solid fa-arrow-right-to-bracket fa-rotate-180 fa-xl" style="color: #07ad90"></i>
                 &nbsp;<span
                     style="color: #07ad90; font-weight: 500; font-size: 20px; margin-top: 10px">Back to Home </span>
@@ -217,7 +217,7 @@
                             <th rowspan="2" style="border: 1px solid #4CAF50;">ID</th>
                             <th colspan="3" style="border: 1px solid #4CAF50;">
                                 ${d.key}   
-                                <a href="${pageContext.request.contextPath}/productionPlan/list/product?id=${param.id}&date=${d.key}">
+                                <a href="${pageContext.request.contextPath}/productionplan/list/product?id=${param.id}&date=${d.key}">
                                     <i class="fa-solid fa-eye"></i>
                                 </a>
                             </th>
@@ -266,7 +266,7 @@
                                 <td>${se.quantity}</td>
                                 <td>${se.employee.dept.name}</td>
                                 <td>
-                                    <a href="${pageContext.request.contextPath}/productionPlan/list/product?id=${param.id}&date=${se.sc.date}&ScheEm=${se.id}">
+                                    <a href="${pageContext.request.contextPath}/productionplan/list/product?id=${param.id}&date=${se.sc.date}&ScheEm=${se.id}">
                                         <i class="fa-solid fa-eye"></i>
                                     </a>
                                 </td>
