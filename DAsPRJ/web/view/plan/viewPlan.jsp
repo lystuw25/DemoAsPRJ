@@ -15,7 +15,7 @@
         <style>
             body {
                 font-family: Arial, sans-serif;
-                background-color: #f4f4f9;
+                background-color: #FBF3EA;
                 margin: 0;
                 padding: 0;
                 align-items: center;
@@ -26,6 +26,8 @@
                 text-align: left;
                 margin: 20px 150px;
                 color: #333;
+                font-family: "Decorative", serif; 
+                font-style: italic; /* In nghiêng */
             }
 
             table {
@@ -36,8 +38,9 @@
                 background-color: #fff;
             }
 
-            thead tr {
-                background-color: #4CAF50;
+            thead tr {  
+                /*background-color: #4CAF50;*/
+                background-color: #FBDEC8;
                 color: #fff;
                 text-align: left;
             }
@@ -45,6 +48,8 @@
             thead tr th {
                 padding: 12px;
                 font-size: 16px;
+                color: #333;
+                font-family: "Decorative", monospace; 
             }
 
             tbody tr:nth-child(even) {
@@ -55,6 +60,7 @@
                 padding: 12px;
                 border-bottom: 1px solid #ddd;
                 text-align: left;
+                font-family: "Decorative", serif; 
             }
 
             tbody tr:hover {
@@ -72,7 +78,7 @@
             </a>
         </div>
 
-        <h1>Kế hoạch</h1>
+        <h1>Lịch trình dự án</h1>
         <table>
             <thead>
                 <tr>

@@ -201,7 +201,6 @@
                 <h2>End: <span>${planTimelines.plan.end}</span></h2>
             </div>
 
-
             <div class="info-item">
                 <h2>Estimate: <span>${planTimelines.estimate}</span></h2>
             </div>
@@ -210,39 +209,34 @@
             </div>
         </div>
         <c:if test="${dates != null}">
-            <table border="1" style="width: 100%; max-width: 800px; border-collapse: collapse; border-color: #4CAF50;">
+            <table>
                 <thead>
                     <tr>
-                        <c:forEach items="${dates}" var="d" varStatus="status">
-                            <th rowspan="2" style="border: 1px solid #4CAF50;">ID</th>
-                            <th colspan="3" style="border: 1px solid #4CAF50;">
-                                ${d.key}   
-                                <a href="${pageContext.request.contextPath}/productionplan/list/product?id=${param.id}&date=${d.key}">
-                                    <i class="fa-solid fa-eye"></i>
-                                </a>
-                            </th>
-                        </c:forEach>
-                    </tr>
-                    <tr>
-                        <c:forEach items="${dates}" var="d" varStatus="status">
-                            <th style="border: 1px solid #4CAF50;">Shift 1</th>
-                            <th style="border: 1px solid #4CAF50;">Shift 2</th>
-                            <th style="border: 1px solid #4CAF50;">Shift 3</th>
-                            </c:forEach>
+                        <th>ID</th>
+                        <th>Date</th>
+                        <th>Shift 1</th>
+                        <th>Shift 2</th>
+                        <th>Shift 3</th>
+                        <th>View</th>
                     </tr>
                 </thead>
                 <tbody>
-                    <tr>
-                        <c:forEach items="${dates}" var="d" varStatus="status">
-                            <td style="border: 1px solid #4CAF50; text-align: center;">${status.index + 1}</td>
-                            <td style="border: 1px solid #4CAF50; text-align: center;">${d.value.split(",")[0].split(":")[1].trim()}</td> 
-                            <td style="border: 1px solid #4CAF50; text-align: center;">${d.value.split(",")[1].split(":")[1].trim()}</td> 
-                            <td style="border: 1px solid #4CAF50; text-align: center;">${d.value.split(",")[2].split(":")[1].trim()}</td> 
-                        </c:forEach>
-                    </tr>
+                    <c:forEach items="${dates}" var="d" varStatus="status">
+                        <tr>
+                            <td>${status.index + 1}</td>
+                            <td>${d.key}</td>
+                            <td>${d.value.split(",")[0].split(":")[1].trim()}</td> 
+                            <td>${d.value.split(",")[1].split(":")[1].trim()}</td> 
+                            <td>${d.value.split(",")[2].split(":")[1].trim()}</td> 
+                            <td>
+                                <a href="${pageContext.request.contextPath}/productionplan/list/product?id=${param.id}&date=${d.key}">
+                                    <i class="fa-solid fa-eye"></i>
+                                </a>
+                            </td>
+                        </tr>
+                    </c:forEach>
                 </tbody>
             </table>
-
             <c:if test="${param.id != null}">
                 <table>
                     <thead>
@@ -387,11 +381,12 @@
 
                 if (total >= maxTotal) {
                     alert("The total of shifts must be less than " + maxTotal + ".");
-                    return false;
+                    return false; 
                 }
 
-                return true;
+                return true; 
             }
         </script>
     </body>
 </html>
+
