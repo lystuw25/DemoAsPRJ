@@ -78,7 +78,7 @@
             </a>
         </div>
 
-        <h1>Lịch trình dự án</h1>
+        <h1>Production Plan </h1>
         <table>
             <thead>
                 <tr>

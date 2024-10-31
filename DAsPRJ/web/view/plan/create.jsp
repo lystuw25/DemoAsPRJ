@@ -28,6 +28,8 @@
                 color: #333;
                 margin-top: 20px;
                 text-align: left; /* Giữ căn trái */
+                font-family: "Decorative", serif; 
+                font-style: italic; /* In nghiêng */
             }
             
             .back-link {

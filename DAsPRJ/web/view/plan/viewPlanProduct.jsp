@@ -15,7 +15,7 @@
         <style>
             body {
                 font-family: Arial, sans-serif;
-                background-color: #f4f4f9;
+                background-color: #FBF3EA;
                 margin: 0;
                 padding: 0;
                 align-items: center;
@@ -26,6 +26,8 @@
                 text-align: left;
                 margin: 20px 150px;
                 color: #333;
+                font-family: "Decorative", serif; 
+                font-style: italic; /* In nghiêng */
             }
 
             table {
@@ -37,7 +39,7 @@
             }
 
             thead tr {
-                background-color: #4CAF50;
+                background-color: #FBDEC8;
                 color: #fff;
                 text-align: left;
             }
@@ -45,6 +47,8 @@
             thead tr th {
                 padding: 12px;
                 font-size: 16px;
+                color: #333;
+                font-family: "Decorative", monospace; 
             }
 
             tbody tr:nth-child(even) {
@@ -55,6 +59,7 @@
                 padding: 12px;
                 border-bottom: 1px solid #ddd;
                 text-align: left;
+                font-family: "Decorative", serif; 
             }
 
             tbody tr:hover {
@@ -78,7 +83,8 @@
             .info-item h2 {
                 margin: 0; /* Bỏ margin cho tiêu đề */
                 font-size: 18px; /* Kích thước chữ */
-                color: #333; /* Màu chữ tối */
+                color: #333; 
+                font-family: "Decorative", monospace; 
             }
 
             .info-item span {
@@ -183,7 +189,7 @@
                     style="color: #07ad90; font-weight: 500; font-size: 20px; margin-top: 10px">Back to Home </span>
             </a>
         </div>
-        <h1>Plan Campaign</h1>
+        <h1>Detailed Production Plan</h1>
         <div class="info">
             <div class="info-item">
                 <h2>ID: <span>${planTimelines.id}</span></h2>
@@ -200,14 +206,12 @@
             <div class="info-item">
                 <h2>End: <span>${planTimelines.plan.end}</span></h2>
             </div>
-
             <div class="info-item">
                 <h2>Estimate: <span>${planTimelines.estimate}</span></h2>
             </div>
             <div class="info-item">
                 <h2>Quantity: <span>${planTimelines.quantity}</span></h2>
             </div>
-        </div>
         <c:if test="${dates != null}">
             <table>
                 <thead>

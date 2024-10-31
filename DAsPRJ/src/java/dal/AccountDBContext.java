@@ -20,7 +20,7 @@ import java.util.logging.Logger;
  */
 public class AccountDBContext extends DBContext {
 
-    public User Login(String user, String pass) {
+    public User get(String user, String pass) {
         User acc = new User();
         PreparedStatement stm = null;
         String sql = "Select * From [User] Where UserName = ? AND password = ?";

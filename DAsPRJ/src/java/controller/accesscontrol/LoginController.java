@@ -24,7 +24,7 @@ public class LoginController extends HttpServlet {
         String pass = req.getParameter("password");
         
         AccountDBContext db = new AccountDBContext();
-        User account = db.Login(user, pass);
+        User account = db.get(user, pass);
         
         if(account!=null){
             req.getSession().setAttribute("account", account);
