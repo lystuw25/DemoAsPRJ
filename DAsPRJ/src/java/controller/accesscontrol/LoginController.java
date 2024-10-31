@@ -14,7 +14,7 @@ import java.io.IOException;
 
 /**
  *
- * @author sonng
+ * @author A A
  */
 public class LoginController extends HttpServlet {
 
@@ -29,11 +29,16 @@ public class LoginController extends HttpServlet {
         if(account!=null){
             req.getSession().setAttribute("account", account);
             resp.sendRedirect(req.getContextPath()+"/home");
+        } else {
+            // If login fails, set an error message and stay on the login page
+            req.setAttribute("errorMessage", "Your username or password is wrong.");
+            req.getRequestDispatcher("login.jsp").forward(req, resp);
         }
-        else resp.getWriter().println("login failed!");
         
-        String url = this.getInitParameter("url");
-        resp.getWriter().println(url);
+//        else resp.getWriter().println("login failed!");
+//        
+//        String url = this.getInitParameter("url");
+//        resp.getWriter().println(url);
         
     }
 

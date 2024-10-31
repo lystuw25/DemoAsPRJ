@@ -41,7 +41,13 @@
                 font-size: 24px;
                 text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
             }
-
+            
+            .error-message {
+                color: red;
+                font-size: 14px;
+                margin-bottom: 15px;
+            }
+            
             label {
                 font-weight: bold;
                 color: #555;
@@ -88,6 +94,14 @@
     <body>
         <form action="login" method="post">
             <h1>Manage Employee</h1>
+            <% 
+                String errorMessage = (String) request.getAttribute("errorMessage");
+                if (errorMessage != null) { 
+            %>
+                <div class="error-message"><%= errorMessage %></div>
+            <% 
+                } 
+            %>
             <label>Account</label>
             <input type="text" name="user" placeholder="Enter account" required/>
             <label>Password</label>
