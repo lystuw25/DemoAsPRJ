@@ -91,7 +91,6 @@ public class AccountDBContext extends DBContext {
                 Logger.getLogger(AccountDBContext.class.getName()).log(Level.SEVERE, null, ex);
             }
         }
-
         return roles;
     }
 }

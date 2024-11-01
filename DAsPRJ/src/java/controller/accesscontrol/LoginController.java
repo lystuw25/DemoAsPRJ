@@ -20,8 +20,8 @@ public class LoginController extends HttpServlet {
 
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        String user = req.getParameter("username");
-        String pass = req.getParameter("password");
+        String user = req.getParameter("user");
+        String pass = req.getParameter("pass");
         
         AccountDBContext db = new AccountDBContext();
         User account = db.get(user, pass);
