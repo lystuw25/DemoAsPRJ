@@ -26,7 +26,7 @@ public class LoginController extends HttpServlet {
         AccountDBContext db = new AccountDBContext();
         User account = db.get(user, pass);
         
-        if(account!=null){
+        if(account.getUsername()!=null){
             req.getSession().setAttribute("account", account);
             resp.sendRedirect(req.getContextPath()+"/home");
         } else {

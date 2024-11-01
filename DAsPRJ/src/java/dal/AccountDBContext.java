@@ -30,9 +30,7 @@ public class AccountDBContext extends DBContext {
             stm.setString(2, pass);
             ResultSet rs = stm.executeQuery();
             while (rs.next()) {
-//                acc.setUsername(rs.getString("UserName"));
-                acc.setDisplayname(rs.getString("displayname"));
-                acc.setUsername(user);
+                acc.setUsername(rs.getString("UserName"));
             }
         } catch (SQLException ex) {
             Logger.getLogger(AccountDBContext.class.getName()).log(Level.SEVERE, null, ex);
