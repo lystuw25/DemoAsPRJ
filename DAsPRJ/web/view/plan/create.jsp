@@ -15,7 +15,7 @@
         <style>
             body{
                 font-family: Arial, sans-serif;
-                background-color: #f4f4f9;
+                background-color: #FBF3EA;
                 margin: 0;
                 padding: 0;
                 display: flex;
@@ -27,9 +27,9 @@
             h1{
                 color: #333;
                 margin-top: 20px;
-                text-align: left; /* Giữ căn trái */
-                font-family: "Decorative", serif; 
-                font-style: italic; /* In nghiêng */
+                text-align: center; 
+                font-family: "Decorative", sans-serifserif; 
+                align-self: center;
             }
             
             .back-link {
@@ -94,18 +94,19 @@
 
             form input[type="submit"] {
                 padding: 12px;
-                background-color: #4CAF50;
-                color: #fff;
+                background-color: #FBDEC8;
+                color: #333;
                 border: none;
                 border-radius: 5px;
                 font-size: 18px;
                 cursor: pointer;
                 transition: background-color 0.3s;
                 width: 100%;
+                font-family: "Decorative", serif; 
             }
 
             form input[type="submit"]:hover {
-                background-color: #45a049;
+                background-color: #678;
             }
 
             table {
@@ -120,13 +121,15 @@
                 text-align: left;
                 border: 1px solid #ddd;
                 background-color: #f9f9f9;
+                font-family: "Decorative", serif; 
             }
 
             table th {
-                background-color: #4CAF50;
-                color: #fff;
+                background-color: #FBDEC8;
+                color: #333;
                 font-size: 16px;
                 text-align: center;
+                font-family: "Decorative", monospace; 
             }
 
             table td input[type="text"] {
@@ -158,9 +161,9 @@
                         &nbsp;<span style="color: #07ad90; font-weight: 500; font-size: 20px; margin-top: 10px">Back to Home</span>
                     </a>
                 </div>
-                <h1>Create Plan</h1>
+                <h1>New Plan</h1>
                 <div class="form-group">
-                    <label>Plan title:</label>
+                    <label>Title:</label>
                     <input type="text" name="name"/>
                 </div>
 

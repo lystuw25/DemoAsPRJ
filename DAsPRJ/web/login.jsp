@@ -18,7 +18,7 @@
                 height: 100vh;
                 margin: 0;
                 font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-                background: linear-gradient(to right, #4facfe, #00f2fe);
+                background: linear-gradient(to right, #FBF3EA, #00f2fe);
             }
 
             form {

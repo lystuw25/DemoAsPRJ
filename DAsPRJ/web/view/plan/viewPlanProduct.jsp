@@ -186,7 +186,7 @@
             <a href="${pageContext.request.contextPath}/productionplan/list" style="text-decoration: none">
                 <i class="fa-solid fa-arrow-right-to-bracket fa-rotate-180 fa-xl" style="color: #07ad90"></i>
                 &nbsp;<span
-                    style="color: #07ad90; font-weight: 500; font-size: 20px; margin-top: 10px">Back to Home </span>
+                    style="color: #07ad90; font-weight: 500; font-size: 20px; margin-top: 10px">Back to PPs</span>
             </a>
         </div>
         <h1>Detailed Production Plan</h1>

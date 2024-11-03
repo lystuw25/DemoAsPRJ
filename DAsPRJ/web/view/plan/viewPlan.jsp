@@ -74,11 +74,11 @@
             <a href="${pageContext.request.contextPath}/home" style="text-decoration: none">
                 <i class="fa-solid fa-arrow-right-to-bracket fa-rotate-180 fa-xl" style="color: #07ad90"></i>
                 &nbsp;<span
-                    style="color: #07ad90; font-weight: 500; font-size: 20px; margin-top: 10px">Back to Home </span>
+                    style="color: #07ad90; font-weight: 500; font-size: 20px; margin-top: 10px">Back to Home</span>
             </a>
         </div>
 
-        <h1>Production Plan </h1>
+        <h1>Production Plans</h1>
         <table>
             <thead>
                 <tr>
