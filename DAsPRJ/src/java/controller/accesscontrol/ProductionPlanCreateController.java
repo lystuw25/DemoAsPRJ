@@ -3,7 +3,7 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Servlet.java to edit this template
  */
 
-package controller.productionplan;
+package controller.accesscontrol;
 
 import controller.accesscontrol.BaseRequiredAuthenticationController;
 import dal.DepartmentDBContext;

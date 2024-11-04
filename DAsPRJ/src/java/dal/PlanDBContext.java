@@ -1,6 +1,6 @@
 package dal;
 import dal.DBContext;
-import entity.Employee;
+import entity.accesscontrol.Employee;
 import entity.assignment.Attendence;
 import entity.assignment.Department;
 import entity.assignment.Plan;

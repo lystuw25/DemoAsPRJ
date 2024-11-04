@@ -25,7 +25,7 @@
     </servlet>
     <servlet>
         <servlet-name>ProductionPlanCreateController</servlet-name>
-        <servlet-class>controller.productionplan.ProductionPlanCreateController</servlet-class>
+        <servlet-class>controller.accesscontrol.ProductionPlanCreateController</servlet-class>
     </servlet>
     <servlet>
         <servlet-name>HomeController</servlet-name>

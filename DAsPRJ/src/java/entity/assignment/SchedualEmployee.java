@@ -4,7 +4,7 @@
  */
 package entity.assignment;
 
-import entity.Employee;
+import entity.accesscontrol.Employee;
 
 /**
  *

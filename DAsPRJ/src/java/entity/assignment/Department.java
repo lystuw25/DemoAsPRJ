@@ -1,6 +1,6 @@
 package entity.assignment;
 
-import entity.Employee;
+import entity.accesscontrol.Employee;
 import java.util.ArrayList;
 
 public class Department {

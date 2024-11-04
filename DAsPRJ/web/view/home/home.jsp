@@ -15,11 +15,13 @@
         <style>
             body {
                 font-family: Arial, sans-serif;
+                background-color: #FBF3EA;
             }
             header {
                 background-color: green;
                 padding: 10px 20px;
-                color: white;
+                color: #333;
+                background-color: #FBDEC8;
             }
             .header {
                 display: flex;
@@ -58,7 +60,9 @@
             /* Container styling */
             .container {
                 display: flex;
+                justify-content: center; /* Center horizontally */
                 margin: 20px;
+                gap: 20px; /* Space between buttons */
             }
             .container-left, .container-right {
                 flex: 1;
@@ -67,12 +71,15 @@
                 display: flex;
                 justify-content: center;
                 align-items: center;
+                background-color: #f9f9f9;
             }
             .container-left {
                 background-color: #f9f9f9;
+                margin-left: 20px;
+
             }
             .container-right {
-                background-color: #e9e9e9;
+                background-color: #f9f9f9;
                 margin-left: 20px;
             }
 
@@ -80,16 +87,18 @@
             .container button {
                 padding: 12px 24px;
                 font-size: 16px;
-                background-color: #4CAF50;
-                color: white;
+                background-color: #FBDEC8;
+                color: #333;
                 border: none;
                 border-radius: 6px;
                 cursor: pointer;
                 transition: background-color 0.3s ease, transform 0.2s ease;
                 box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+                font-family: "Decorative", monospace;
+                
             }
             .container button:hover {
-                background-color: #45a049;
+                background-color: #678;
                 transform: scale(1.05);
             }
             .container button:active {
@@ -107,11 +116,11 @@
                     Manage Employee
                 </div>
                 <div class="header-center">
-                    Welcome to Home Page
+                    Home Page
                 </div>
                 <div class="header-right">
                     <span>${sessionScope.account.username}</span>
-                    <button onclick="logout()">Logout</button>
+                    <button onclick="logout()">logout</button>
                 </div>
             </div>
         </header>
